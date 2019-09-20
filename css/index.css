@@ -90,8 +90,7 @@ h1, h2, h3, h4, h5 {
 
 .logo {
 	
-	align-self: baseline;
-	
+	align-self: center;
 }
 
 .box {
@@ -202,7 +201,52 @@ footer {
 }
 
 @media (max-width: 800px) {
-	
+	.container {
+		width: 100%;
+	}
+
+	.nav {
+		width: 95%;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.links {
+		order: 2;
+		width: 100%;
+	}
+
+	.logo {
+		order: 1;
+		align-items: center;
+		margin-top: 5%;
+	}
+
+	.header-img {
+		display: none;
+	}
+
+	.box {
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+
+	.content-1 {
+		padding: 2%;
+		padding-top: 0px;
+	}
+
+	.content-1-box {
+		width: 100%;
+		padding-right: 2%;
+		padding-bottom: 0px;
+	}
+
+	.content-2-box {
+		width: 100%;
+		padding-right: 4%;
+		padding-bottom: 0px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -211,7 +255,7 @@ footer {
 	}
 
 	.nav {
-		flex-flow: column-reverse wrap-reverse;
+		flex-flow: row-reverse wrap-reverse;
 		align-items: center;
 		width: 100%;
 		margin-top: 0px;
@@ -219,6 +263,7 @@ footer {
 	}
 
 	.links {
+		order: 1;
 		flex-direction: column;
 		width: 100%;
 		align-items: center;
@@ -233,6 +278,7 @@ footer {
 	}
 
 	.logo {
+		order: 2;
 		padding: 0px 0px;
 		align-items: center;
 		margin: 0 auto;
